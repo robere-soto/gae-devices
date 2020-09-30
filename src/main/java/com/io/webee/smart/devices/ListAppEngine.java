@@ -8,10 +8,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet(
-    name = "HelloAppEngine",
-    urlPatterns = {"/hello"}
+    name = "ListAppEngine",
+    urlPatterns = {"/devices/list"}
 )
-public class HelloAppEngine extends HttpServlet {
+public class ListAppEngine extends HttpServlet {
 
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) 
@@ -20,7 +20,8 @@ public class HelloAppEngine extends HttpServlet {
     response.setContentType("text/plain");
     response.setCharacterEncoding("UTF-8");
 
-    response.getWriter().print("Hello App Engine!\r\n");
+    response.getWriter().print("List action\r\n");
 
   }
+  
 }
